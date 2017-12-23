@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CurvedEntry"
+             x:Class="CurvedEntry.MainPage"
+             xmlns:custom="clr-namespace:CurvedEntry"
+             Title="Custom Entry">
+    <ContentPage.Content>
+        <StackLayout  Padding="10">
+            <custom:CustomEntry
+                                CornerRadius="18"
+                                IsCurvedCornersEnabled="True"
+                                BorderColor="BlueViolet"    
+                                HorizontalTextAlignment="Center"
+                                FontSize="17"
+                                HeightRequest="40"
+                                Placeholder="Custom Entry"
+                                PlaceholderColor="Gray"
+                                TextColor="Black"
+                                FontAttributes="Bold"
+                                WidthRequest="100"/>
+            <Entry TextColor="Red"
+                   PlaceholderColor="#7AB0DE"
+                   Placeholder="Normal Entry" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
